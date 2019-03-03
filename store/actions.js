@@ -4,7 +4,7 @@ export default {
       app.head.meta && app.head.meta.find(meta => meta.name === 'description')
     commit('setMeta', {
       name: app.head.title,
-      description: description ? description.content : ''
+      description: description ? description.content : '',
     })
   },
   toggleMenuOpen({ commit, state }) {
@@ -17,5 +17,5 @@ export default {
    */
   setMenuOpen({ commit }, value) {
     commit('menuOpen', value)
-  }
+  },
 }

@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroLine'
+  name: 'HeroLine',
 }
 </script>
 <style lang="scss" scoped>

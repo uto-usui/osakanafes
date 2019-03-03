@@ -10,7 +10,7 @@ module.exports = {
   head: {
     title: 'osakana fes',
     htmlAttrs: {
-      lang: 'ja'
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
@@ -18,8 +18,8 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: ''
-      }
+        content: '',
+      },
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -27,9 +27,9 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Source+Code+Pro'
-      }
-    ]
+          'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Source+Code+Pro',
+      },
+    ],
   },
 
   /*
@@ -48,7 +48,7 @@ module.exports = {
   plugins: [
     '~plugins/vue-lazyload.client.js',
     '~plugins/console.js',
-    '~plugins/scrollTo.js'
+    '~plugins/scrollTo.js',
   ],
 
   /*
@@ -58,7 +58,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
-    ['@nuxtjs/google-gtag', { id: 'UA-69841076-1' }]
+    ['@nuxtjs/google-gtag', { id: 'UA-69841076-1' }],
   ],
 
   /**
@@ -73,14 +73,14 @@ module.exports = {
       this.$store.getters.getMenuOpen &&
         this.$store.dispatch('setMenuOpen', false)
       done()
-    }
+    },
   },
 
   styleResources: {
     scss: [
       '~/assets/sass/foundation/variable/_variable.scss',
-      '~/assets/sass/foundation/mixin/_mixin.scss'
-    ]
+      '~/assets/sass/foundation/mixin/_mixin.scss',
+    ],
   },
 
   /*
@@ -95,7 +95,7 @@ module.exports = {
   */
   build: {
     splitChunks: {
-      layouts: true
+      layouts: true,
     },
     /*
     ** You can extend webpack config here
@@ -107,12 +107,12 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
         config.plugins.push(
           new StylelintPlugin({
-            files: ['**/*.vue']
-          })
+            files: ['**/*.vue'],
+          }),
         )
       }
       // import alias
@@ -121,8 +121,8 @@ module.exports = {
       config.resolve.alias.Images = path.resolve(__dirname, './assets/images/')
       config.resolve.alias['~'] = path.resolve(__dirname)
       config.resolve.alias['@'] = path.resolve(__dirname)
-    }
+    },
   },
 
-  generate: {}
+  generate: {},
 }

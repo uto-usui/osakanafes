@@ -22,7 +22,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroSoratobiwo'
+  name: 'HeroSoratobiwo',
 }
 </script>
 <style lang="scss" scoped>

@@ -11,11 +11,11 @@ module.exports = {
       '@': path.resolve(__dirname),
       Sass: path.resolve(__dirname, './assets/sass/'),
       Js: path.resolve(__dirname, './assets/Js/'),
-      Images: path.resolve(__dirname, './assets/images/')
-    }
+      Images: path.resolve(__dirname, './assets/images/'),
+    },
   },
   plugins: [
     // Vueを読み込めるようにするため
-    new VueLoaderPlugin()
-  ]
+    new VueLoaderPlugin(),
+  ],
 }

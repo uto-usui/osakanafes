@@ -86,7 +86,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroFestival'
+  name: 'HeroFestival',
 }
 </script>
 <style lang="scss" scoped>

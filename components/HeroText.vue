@@ -38,7 +38,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroText'
+  name: 'HeroText',
 }
 </script>
 <style lang="scss" scoped>

@@ -38,11 +38,16 @@
     </g>
   </g>
 </template>
+
 <script>
+import { TweenLite } from 'gsap/TweenLite'
+
 export default {
-  name: 'HeroBubble'
+  name: 'HeroBubble',
+  mounted() {},
 }
 </script>
+
 <style lang="scss" scoped>
 svg {
   //

@@ -3,19 +3,17 @@
     <svg viewBox="0 0 635.44 601.85">
       <title>hero</title>
       <g class="a">
-        <g>
-          <HeroBubble />
-          <HeroCircle />
-          <HeroSakana />
-          <HeroTeri />
-          <HeroSoratobiwo />
-          <HeroTextCircle />
-          <HeroTextGiza />
-          <HeroText />
-          <HeroFestival />
-          <HeroOsaka />
-          <HeroLine />
-        </g>
+        <HeroBubble />
+        <HeroCircle />
+        <HeroSakana />
+        <HeroTeri />
+        <HeroSoratobiwo />
+        <HeroTextCircle />
+        <HeroTextGiza />
+        <HeroText />
+        <HeroFestival />
+        <HeroOsaka />
+        <HeroLine />
       </g>
     </svg>
   </div>
@@ -47,8 +45,8 @@ export default {
     HeroTeri,
     HeroSakana,
     HeroCircle,
-    HeroBubble
-  }
+    HeroBubble,
+  },
 }
 </script>
 
@@ -83,7 +81,7 @@ svg {
 }
 
 .c {
-  fill: rgba(231, 225, 152, 1);
+  fill: $color-primary-dark;
 }
 
 .d {

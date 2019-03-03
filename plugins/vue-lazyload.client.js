@@ -7,7 +7,7 @@ Vue.use(VueLazyload, {
   observer: true,
   observerOptions: {
     rootMargin: '0px',
-    threshold: 0.1
+    threshold: 0.1,
   },
-  lazyComponent: true
+  lazyComponent: true,
 })

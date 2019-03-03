@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroTextCircle'
+  name: 'HeroTextCircle',
 }
 </script>
 <style lang="scss" scoped>

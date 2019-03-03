@@ -2,9 +2,9 @@ export default () => {
   return {
     meta: {
       name: '',
-      description: ''
+      description: '',
     },
     domain: 'https://wired.j/wellbeing',
-    menuOpen: false
+    menuOpen: false,
   }
 }

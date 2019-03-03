@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroCircle'
+  name: 'HeroCircle',
 }
 </script>
 <style lang="scss" scoped>

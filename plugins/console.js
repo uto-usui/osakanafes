@@ -8,6 +8,6 @@ Vue.mixin({
   methods: {
     $console(...args) {
       console.dir(args)
-    }
-  }
+    },
+  },
 })

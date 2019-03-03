@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroTeri'
+  name: 'HeroTeri',
 }
 </script>
 <style lang="scss" scoped>

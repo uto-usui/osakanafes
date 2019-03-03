@@ -4,5 +4,5 @@ export default {
   },
   menuOpen(state, data) {
     state.menuOpen = data
-  }
+  },
 }

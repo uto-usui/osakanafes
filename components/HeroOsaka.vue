@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  name: 'HeroOsaka'
+  name: 'HeroOsaka',
 }
 </script>
 <style lang="scss" scoped>
