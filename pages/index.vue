@@ -1,18 +1,27 @@
 <template>
-  <section>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est exercitationem illum impedit nobis officiis quae quod similique voluptatibus voluptatum. Aperiam at, atque culpa dolor hic magni nam neque officia.
+  <section class="wrapper">
+    <Hero />
   </section>
 </template>
 
 <script>
-// import Wrapper from '~/components/Wrapper'
+import Hero from '~/components/Hero'
 
 export default {
   components: {
-    //
+    Hero
   },
   computed: {
     //
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: $color-primary-light;
+  mix-blend-mode: multiply;
+}
+</style>

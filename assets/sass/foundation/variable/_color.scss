@@ -3,28 +3,11 @@
   // color setting
   // - - - - - - - -
  */
-$color-primary: #bcf823 !default;
-$color-primary-dark: #96c61c !default;
-
-$primary-color: #f50057;
-$secondary-color: #ffd740;
-$thirdry-color: #2a8379;
-$primary-bg-color: #eee;
-$white: #eee;
-$black: #222831;
-$glay: #393e46;
-$light-glay: rgba($black, 0.4);
-
-/**
-  // text
- */
-$text-color: $black;
-$text-link-color: $primary-color;
-$text-primary-color: #484550;
-$text-glay-color: #b7b7b7;
+$color-primary: #FFF200 !default;
+$color-primary-light: #FFF8A1 !default;
 
 
-$color-black: #000 !default;
+$color-black: #1a1a1a !default;
 $color-white: #fff !default;
 
 $color-red: #f74621 !default;
@@ -34,10 +17,15 @@ $color-blue: #6da7bb !default;
 $color-blue-light: #80abba !default;
 $color-blue-dark: #003a4e !default;
 
+$text-color: $color-black;
+$text-link-color: $color-primary;
+$text-primary-color: #484550;
+$text-glay-color: #b7b7b7;
+
 $color-bg-primary: #ccccc3 !default;
 $color-bg-secondary: #1e1e1e !default;
 
-$color-gray-level1: #464646 !default;
+$color-gray-level1: #414042 !default;
 $color-gray-level2: #606060 !default;
 $color-gray-level3: #a8a8a8 !default;
 $color-gray-level4: #b9b9b9 !default;
