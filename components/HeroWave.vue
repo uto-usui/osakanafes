@@ -10,11 +10,13 @@
     </svg>
   </div>
 </template>
+
 <script>
 export default {
   name: 'HeroWave'
 }
 </script>
+
 <style lang="scss" scoped>
 .hero-wave {
   margin-top: 50px;
@@ -36,7 +38,15 @@ export default {
 }
 
 .hero-wave__item {
-  animation: waveTransform 2s infinite alternate $easeInOutSine;
+  animation: waveTransform 2s infinite alternate $easeOutSine;
+  //
+  @for $i from 2 through 3 {
+    &:nth-of-type(#{$i}) {
+      $delay: -0.4 * $i + s;
+
+      animation-delay: $delay;
+    }
+  }
 }
 
 @keyframes waveTransform {
