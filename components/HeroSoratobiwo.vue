@@ -20,11 +20,49 @@
     <path class="f" d="M191.67,183.38a3.57,3.57,0,0,0-1.54,1.19,1.24,1.24,0,0,0,.13,1.85c.55.4,1.08.23,2.2-.43,1.48-.92,2.7-1.09,3.85-.26,1.53,1.1,1.59,2.93.29,4.73a5.49,5.49,0,0,1-2.1,1.77l-1-1.27a4.67,4.67,0,0,0,1.85-1.43c.65-.89.53-1.63-.08-2.07s-1.17-.35-2.27.31c-1.58,1-2.82,1-3.74.39-1.33-1-1.6-2.8-.39-4.48a5,5,0,0,1,1.83-1.55Z" />
   </g>
 </template>
+
 <script>
+import { TweenMax, SlowMo } from 'gsap'
+import { randRange } from 'Js/math'
+
 export default {
   name: 'HeroSoratobiwo',
+  mounted() {
+    this.animationInit()
+  },
+  methods: {
+    animationInit() {
+      const targets = this.$el.querySelectorAll('.f')
+      // const vueThis = this
+
+      TweenMax.set(targets, {
+        opacity: 1,
+        scale: 0,
+        y: 300 * randRange(0.8, 1.2),
+        x: 300 * randRange(0.8, 1.2),
+        transformOrigin: '50% 50%',
+      })
+
+      TweenMax.staggerTo(
+        targets,
+        2,
+        {
+          scale: 1,
+          y: 0,
+          x: 0,
+          z: 0,
+          ease: SlowMo.ease.config(0.1, 0.8, false),
+          onComplete() {
+            //
+          },
+        },
+        0.075,
+      )
+    },
+  },
 }
 </script>
+
 <style lang="scss" scoped>
 svg {
   //
@@ -35,6 +73,7 @@ svg {
 }
 
 .f {
+  opacity: 0;
   fill: $color-black;
 }
 </style>
