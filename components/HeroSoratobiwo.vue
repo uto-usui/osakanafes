@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import { TweenMax, Sine } from 'gsap'
-import { randRange } from 'Js/math'
+import { TweenMax, Back } from 'gsap'
+// import { randRange } from 'Js/math'
 
 export default {
   name: 'HeroSoratobiwo',
@@ -38,26 +38,17 @@ export default {
       targets.forEach(el => {
         TweenMax.set(el, {
           opacity: 1,
-          scale: 1,
-          rotationX: 360 * 5,
-          y: 300 * randRange(-1.5, 1.5),
-          x: 300 * randRange(-1.5, 1.5),
-          z: 300 * randRange(-1.5, 1.5),
+          scale: 0,
           transformOrigin: '50% 50%',
-          perspective: 400,
         })
       })
 
       TweenMax.staggerTo(
         targets,
-        1.5,
+        0.5,
         {
           scale: 1,
-          y: 0,
-          x: 0,
-          z: 0,
-          rotationX: 0,
-          ease: Sine.easeOut,
+          ease: Back.easeOut.config(3),
           onComplete() {
             //
           },
