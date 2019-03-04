@@ -12,11 +12,49 @@
     <path class="f" d="M201.41,403.75l-5.25.54-1-9.39,5.06-.51.15,1.51-3.24.33.23,2.27,3.06-.31.15,1.48-3.06.31.27,2.61,3.44-.35Z" />
   </g>
 </template>
+
 <script>
+import { TweenMax, SlowMo } from 'gsap'
+import { randRange } from 'Js/math'
+
 export default {
   name: 'HeroOsaka',
+  mounted() {
+    this.animationInit()
+  },
+  methods: {
+    animationInit() {
+      const targets = this.$el.querySelectorAll('.f')
+      // const vueThis = this
+
+      TweenMax.set(targets, {
+        opacity: 1,
+        scale: 0,
+        y: 300 * randRange(0.8, 1.2),
+        x: 300 * randRange(0.8, 1.2),
+        transformOrigin: '50% 50%',
+      })
+
+      TweenMax.staggerTo(
+        targets,
+        2,
+        {
+          scale: 1,
+          y: 0,
+          x: 0,
+          z: 0,
+          ease: SlowMo.ease.config(0.1, 0.8, false),
+          onComplete() {
+            //
+          },
+        },
+        0.075,
+      )
+    },
+  },
 }
 </script>
+
 <style lang="scss" scoped>
 svg {
   //
@@ -27,6 +65,7 @@ svg {
 }
 
 .f {
+  opacity: 0;
   fill: $color-black;
 }
 </style>
