@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { TweenMax, SlowMo } from 'gsap'
+import { TweenMax, Sine } from 'gsap'
 import { randRange } from 'Js/math'
 
 export default {
@@ -27,28 +27,34 @@ export default {
       const targets = this.$el.querySelectorAll('.f')
       // const vueThis = this
 
-      TweenMax.set(targets, {
-        opacity: 1,
-        scale: 0,
-        y: 300 * randRange(0.8, 1.2),
-        x: 300 * randRange(0.8, 1.2),
-        transformOrigin: '50% 50%',
+      targets.forEach(el => {
+        TweenMax.set(el, {
+          opacity: 1,
+          scale: 1,
+          rotationX: 360 * 5,
+          y: 300 * randRange(-1.5, 1.5),
+          x: 300 * randRange(-1.5, 1.5),
+          z: 300 * randRange(-1.5, 1.5),
+          transformOrigin: '50% 50%',
+          perspective: 400,
+        })
       })
 
       TweenMax.staggerTo(
         targets,
-        2,
+        1.5,
         {
           scale: 1,
           y: 0,
           x: 0,
           z: 0,
-          ease: SlowMo.ease.config(0.1, 0.8, false),
+          rotationX: 0,
+          ease: Sine.easeOut,
           onComplete() {
             //
           },
         },
-        0.075,
+        0.1,
       )
     },
   },

@@ -85,3 +85,7 @@ img[lazy='loaded'] {
   opacity: 1;
   transition: 0.8s;
 }
+
+svg {
+  transform-box: fill-box
+}
