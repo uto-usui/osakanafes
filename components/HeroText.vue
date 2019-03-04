@@ -43,12 +43,11 @@ export default {
       const targets = this.$el.querySelectorAll('.z')
       const vueThis = this
 
-      targets.forEach(el => {
-        TweenMax.set(el, {
-          opacity: 1,
-          scale: 0,
-          transformOrigin: '50% 50%',
-        })
+      TweenMax.set(targets, {
+        opacity: 1,
+        scale: 0,
+        rotation: 30,
+        transformOrigin: '50% 50%',
       })
 
       TweenMax.staggerTo(
@@ -56,6 +55,7 @@ export default {
         0.5,
         {
           scale: 1,
+          rotation: 0,
           ease: Back.easeOut.config(2),
           onComplete() {
             vueThis.morphing(this.target)
@@ -72,15 +72,18 @@ export default {
       })
       tl.to(target, 0.8, {
         scale: 1.5,
+        rotation: 10,
         ease: Power4.easeInOut,
       }).to(target, 0.4, {
         scale: 1,
+        rotation: 0,
         ease: Sine.easeInOut,
       })
     },
   },
 }
 </script>
+
 <style lang="scss" scoped>
 svg {
   //
@@ -96,7 +99,6 @@ svg {
 
 .i {
   fill: $color-primary;
-  transform: rotate(180deg);
 }
 
 .m {
