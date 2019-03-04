@@ -5,7 +5,7 @@
         <path class="c" d="M499.33,246.2a15.25,15.25,0,1,0,16.73-13.61A15.24,15.24,0,0,0,499.33,246.2Z" />
         <path class="c" d="M563.55,163.63a36,36,0,1,0,39.55-32.16A36.05,36.05,0,0,0,563.55,163.63Z" />
         <path class="c" d="M628.64,235.23A16.63,16.63,0,1,1,613.8,217,16.62,16.62,0,0,1,628.64,235.23Z" />
-        <path class="c" d="M592.08,265.5a26.33,26.33,0,1,1-23.5-28.89A26.31,26.31,0,0,1,592.08,265.5Z" />
+        <path class="c c4" d="M592.08,265.5a26.33,26.33,0,1,1-23.5-28.89A26.31,26.31,0,0,1,592.08,265.5Z" />
         <path class="c" d="M509.06,314.08a16.63,16.63,0,1,1-14.84-18.25A16.62,16.62,0,0,1,509.06,314.08Z" />
         <path class="c" d="M525,375.63A9.7,9.7,0,1,1,516.35,365,9.68,9.68,0,0,1,525,375.63Z" />
       </g>
@@ -40,11 +40,47 @@
 </template>
 
 <script>
-import { TweenLite } from 'gsap/TweenLite'
+import { TweenMax, Expo } from 'gsap'
 
 export default {
   name: 'HeroBubble',
-  mounted() {},
+  mounted() {
+    this.animationInit()
+  },
+  methods: {
+    animationInit() {
+      const targets = this.$el.querySelectorAll('.c')
+      const vueThis = this
+
+      TweenMax.set(targets, {
+        opacity: 1,
+        scale: 0,
+        transformOrigin: '50% 50%',
+      })
+
+      TweenMax.to(targets, 1, {
+        scale: 1,
+        ease: Expo.easeInOut,
+        onComplete() {
+          vueThis.morphing(this.target)
+        },
+      })
+    },
+    morphing(targets) {
+      TweenMax.fromTo(
+        targets,
+        2,
+        {
+          scale: 1,
+        },
+        {
+          scale: 0.8,
+          repeat: -1,
+          yoyo: true,
+        },
+      )
+    },
+  },
 }
 </script>
 
@@ -58,6 +94,7 @@ svg {
 }
 
 .c {
-  fill: rgba(231, 225, 152, 1);
+  opacity: 0;
+  fill: $color-primary-dark;
 }
 </style>
