@@ -9,11 +9,40 @@
     <path class="h" d="M368.73,183s32.59,5.27,28.76,25.88" />
   </g>
 </template>
+
 <script>
+import { TweenMax, Expo } from 'gsap'
+
 export default {
   name: 'HeroTeri',
+  mounted() {
+    this.animationInit()
+  },
+  methods: {
+    animationInit() {
+      const targets = this.$el.querySelectorAll('.h')
+      // const vueThis = this
+
+      targets.forEach(el => {
+        const len = el.getTotalLength()
+
+        TweenMax.set(el, {
+          opacity: 1,
+          strokeDasharray: len,
+          strokeDashoffset: len,
+        })
+
+        TweenMax.to(el, 0.8, {
+          strokeDashoffset: 0,
+          delay: 2.2,
+          ease: Expo.easeInOut,
+        })
+      })
+    },
+  },
 }
 </script>
+
 <style lang="scss" scoped>
 svg {
   //
@@ -24,6 +53,7 @@ svg {
 }
 
 .h {
+  opacity: 0;
   fill: none;
   stroke: $color-primary-light;
   stroke-width: 4.79px;
