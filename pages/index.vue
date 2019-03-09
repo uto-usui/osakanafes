@@ -2,15 +2,18 @@
   <section class="wrapper">
     <Hero />
     <About />
+    <Support />
   </section>
 </template>
 
 <script>
 import Hero from '~/components/Hero'
 import About from '~/components/About'
+import Support from '~/components/Support'
 
 export default {
   components: {
+    Support,
     About,
     Hero,
   },
