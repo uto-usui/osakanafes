@@ -84,9 +84,67 @@
     </g>
   </g>
 </template>
+
 <script>
+import { TweenMax, Power1, Power4 } from 'gsap'
+// import { pause } from 'Js/animation'
+
 export default {
   name: 'HeroFestival',
+  mounted() {
+    this.animationInit()
+  },
+  methods: {
+    animationInit() {
+      this.animationFirst()
+      this.animationSecond()
+    },
+    animationFirst() {
+      const targets = this.$el.querySelectorAll('.t')
+      // const vueThis = this
+
+      targets.forEach(el => {
+        const len = el.getTotalLength()
+
+        TweenMax.set(el, {
+          opacity: 1,
+          strokeDasharray: len,
+          strokeDashoffset: len,
+        })
+      })
+      TweenMax.staggerTo(
+        targets,
+        0.5,
+        {
+          strokeDashoffset: 0,
+          ease: Power4.easeInOut,
+        },
+        0.05,
+      )
+    },
+    animationSecond() {
+      const targets = this.$el.querySelectorAll('.s')
+      TweenMax.set(targets, {
+        opacity: 1,
+        scale: 0,
+        x: -60,
+        rotation: 30,
+        transformOrigin: '50% 50%',
+      })
+
+      TweenMax.staggerTo(
+        targets,
+        0.75,
+        {
+          scale: 1,
+          x: 0,
+          rotation: 0,
+          ease: Power1.easeInOut,
+        },
+        0.1,
+      )
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -99,12 +157,14 @@ svg {
 }
 
 .s {
+  opacity: 0;
   fill: $color-primary;
   stroke: $color-primary;
   stroke-width: 3.37px;
 }
 
 .t {
+  opacity: 0;
   fill: none;
   stroke: $color-black;
   stroke-linecap: round;
