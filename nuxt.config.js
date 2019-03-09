@@ -8,7 +8,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'osakana fes',
+    title: 'osakana fes - soratobiwo presents',
     htmlAttrs: {
       lang: 'ja',
     },
@@ -46,16 +46,16 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/vue-lazyload.client.js',
-    '~plugins/console.js',
-    '~plugins/scrollTo.js',
+    // '~plugins/vue-lazyload.client.js',
+    // '~plugins/console.js',
+    // '~plugins/scrollTo.js',
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     ['@nuxtjs/google-gtag', { id: 'UA-69841076-1' }],
