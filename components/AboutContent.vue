@@ -1,0 +1,121 @@
+<template>
+  <div class="about__inner">
+    <div class="about__section">
+      <h2 class="about__title">
+        OSAKANA FES … ?
+      </h2>
+      <div class="about__box">
+        <p>真夏の大阪・堀江の街に</p>
+        <p>
+          活きの良いお魚
+          <small>(バンド&SSW)</small>
+          集まりました！
+        </p>
+        <p>soratobiwoが2019年から立ち上げた</p>
+        <p>堀江を舞台にした5会場ライブサーキット！</p>
+        <p>
+          あなた好みのお魚
+          <small>(バンド&SSW)</small>
+          を探して
+        </p>
+        <p>
+          美味しく召し上がれ！
+          <small>(ライブ楽しんでね！)</small>
+        </p>
+      </div>
+    </div>
+    <div class="about__section">
+      <div class="about__section">
+        <h2 class="about__title">
+          DETAILS ///
+        </h2>
+        <div class="about__box">
+          <dl>
+            <dt>『堀江 お魚ロックフェスティバル 2019』</dt>
+            <dd>2019.7.14 SUN</dd>
+            <dt>TIME</dt>
+            <dd>
+              リストバンド引換 11:00 <br>
+              START 12:00
+            </dd>
+            <dt>PLACE</dt>
+            <dd>
+              北堀江club vijon<br>
+              南堀江Knave<br>
+              hills パン工場<br>
+              SOCORE FACTORY<br>
+              covent garden
+            </dd>
+            <dt>ACT</dt>
+            <dd>全48組(予定)</dd>
+            <dt>TICKET</dt>
+            <dd>¥3500 (1d別)</dd>
+            <dt>TWITTER</dt>
+            <dd><a href="https://twitter.com/osakana_fes" target="_blank">@osakana_fes</a></dd>
+            <dt>CONTACT</dt>
+            <dd><a href="mailto:osakana.fes19@gmail.com">osakana.fes19@gmail.com</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: 'AboutContent',
+}
+</script>
+<style lang="scss" scoped>
+.about__inner {
+  padding-bottom: 7.5vw;
+  background-color: $color-black;
+  //
+  @include section-default;
+}
+
+.about__section {
+  //
+  + .about__section {
+    margin-top: 7.5vw;
+  }
+}
+
+.about__title {
+  font-size: 9vw;
+  font-weight: bold;
+  color: $color-primary;
+  text-align: left;
+}
+
+.about__box {
+  padding: calc(7.5vw / 2);
+  font-size: 1.3rem;
+  line-height: 1.75;
+  text-align: left;
+  background-color: $color-primary;
+  //
+  p {
+    //
+  }
+  //
+  small {
+    //
+  }
+  //
+  dl {
+    //
+  }
+  //
+  dt {
+    font-weight: bold;
+  }
+
+  //
+  dd {
+    //
+    + dt {
+      margin-top: 1em;
+    }
+  }
+}
+</style>

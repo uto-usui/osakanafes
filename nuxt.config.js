@@ -27,7 +27,7 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Source+Code+Pro',
+          'https://fonts.googleapis.com/css?family=Montserrat:400,700',
       },
     ],
   },

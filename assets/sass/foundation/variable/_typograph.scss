@@ -13,6 +13,7 @@
 $base-fontsize: 10px !default;
 $base-fontweight: 400 !default;
 $base-line-height: 1.75 !default;
+
 //
 //
 // ---------------------------------------------------------
@@ -34,7 +35,7 @@ $font-serif: 游明朝, YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho
 //
 $font-sans-serif-hiragino: -apple-system, BlinkMacSystemFont, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", MyYuGothicM, YuGothic, メイリオ, Meiryo, "Noto Sans Japanese", "Noto Sans CJK JP", sans-serif !default;
 //
-$font-sans-serif-yu: 'Open Sans', -apple-system, BlinkMacSystemFont, "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !default;
+$font-sans-serif-yu: 'Montserrat', -apple-system, BlinkMacSystemFont, "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !default;
 //
 $font-sans-serif: $font-sans-serif-yu;
 //

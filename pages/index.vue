@@ -1,14 +1,17 @@
 <template>
   <section class="wrapper">
     <Hero />
+    <About />
   </section>
 </template>
 
 <script>
 import Hero from '~/components/Hero'
+import About from '~/components/About'
 
 export default {
   components: {
+    About,
     Hero,
   },
   computed: {
