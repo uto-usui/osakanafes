@@ -3,6 +3,7 @@
     <Hero />
     <About />
     <Support />
+    <FooterDefault />
   </section>
 </template>
 
@@ -10,9 +11,11 @@
 import Hero from '~/components/Hero'
 import About from '~/components/About'
 import Support from '~/components/Support'
+import FooterDefault from '~/pages/FooterDefault'
 
 export default {
   components: {
+    FooterDefault,
     Support,
     About,
     Hero,
