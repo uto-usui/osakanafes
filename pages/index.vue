@@ -22,6 +22,5 @@ export default {
   min-height: 100vh;
   overflow: hidden;
   background-color: $color-primary-light;
-  mix-blend-mode: multiply;
 }
 </style>
