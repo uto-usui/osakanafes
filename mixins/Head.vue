@@ -7,7 +7,7 @@ const meta = {
   title: 'osakana fes - soratobiwo presents',
   description:
     'ウェブ制作のあれこれについて学習したことをメモしたりクリップしたり気ままに綴っていきます。',
-  img: 'https://webmanab-html.com/ogp.png',
+  img: 'https://osakana-fes.com/ogp.png',
   ogType: 'website',
 }
 
