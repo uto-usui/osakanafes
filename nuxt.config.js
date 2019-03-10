@@ -18,7 +18,8 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: '2019年7月14日(日)に全50組の出演を予定している大阪・堀江 「お魚ロックフェスティバル」を開催します。soratobiwoが2019年から立ち上げた堀江を舞台にした5会場ライブサーキット！',
+        content:
+          '2019年7月14日(日)に全50組の出演を予定している大阪・堀江 「お魚ロックフェスティバル」を開催します。soratobiwoが2019年から立ち上げた堀江を舞台にした5会場ライブサーキット！',
       },
     ],
     link: [
@@ -26,8 +27,7 @@ module.exports = {
       { rel: 'apple-touch-icon-precomposed', href: '/apple-touch-icon.png' },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Montserrat:400,700',
+        href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700',
       },
     ],
   },
@@ -57,8 +57,9 @@ module.exports = {
   modules: [
     // '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
     '@nuxtjs/style-resources',
-    ['@nuxtjs/google-gtag', { id: 'UA-69841076-1' }],
+    ['@nuxtjs/google-gtag', { id: 'UA-135906193-1' }],
   ],
 
   /**
