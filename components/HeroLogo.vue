@@ -57,14 +57,28 @@ export default {
   margin-right: -25vw;
   margin-left: -25vw;
   //
+  @include tablet {
+    margin-top: -20vw;
+    margin-right: -10vw;
+    margin-left: -10vw;
+  }
+  //
   @include desktop {
-    margin-top: -17vw;
-    margin-right: 10vw;
-    margin-left: 10vw;
+    margin-top: -12vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
   }
   //
   @include widescreen {
-    margin-top: -15vw;
+    margin-top: -5vw;
+    margin-right: 25vw;
+    margin-left: 25vw;
+  }
+  //
+  @include fullhd {
+    margin-top: -8vw;
+    margin-right: 25vw;
+    margin-left: 25vw;
   }
 }
 
