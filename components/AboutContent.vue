@@ -31,7 +31,7 @@
         </h2>
         <div class="about__box">
           <dl>
-            <dt>『堀江 お魚ロックフェスティバル 2019』</dt>
+            <dt>堀江 お魚ロックフェスティバル 2019</dt>
             <dd>2019.7.14 SUN</dd>
             <dt>TIME</dt>
             <dd>
@@ -51,9 +51,17 @@
             <dt>TICKET</dt>
             <dd>¥3500 (1d別)</dd>
             <dt>TWITTER</dt>
-            <dd><a href="https://twitter.com/osakana_fes" target="_blank">@osakana_fes</a></dd>
+            <dd>
+              <a href="https://twitter.com/osakana_fes" target="_blank">
+                @osakana_fes
+              </a>
+            </dd>
             <dt>CONTACT</dt>
-            <dd><a href="mailto:osakana.fes19@gmail.com">osakana.fes19@gmail.com</a></dd>
+            <dd>
+              <a href="mailto:osakana.fes19@gmail.com">
+                osakana.fes19@gmail.com
+              </a>
+            </dd>
           </dl>
         </div>
       </div>
@@ -71,20 +79,42 @@ export default {
   background-color: $color-black;
   //
   @include section-default;
+  //
+  @include widescreen {
+    display: flex;
+  }
 }
 
 .about__section {
   //
   + .about__section {
     margin-top: 7.5vw;
+    //
+
+    @include widescreen {
+      width: calc(50% - 7.5vw / 2);
+      margin-top: 0;
+      margin-left: 7.5vw;
+    }
   }
 }
 
 .about__title {
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
   font-size: 9vw;
   font-weight: bold;
   color: $color-primary;
   text-align: left;
+  white-space: nowrap;
+  //
+  @include desktop {
+    margin-bottom: -0.15em;
+  }
+  //
+  @include widescreen {
+    font-size: 4vw;
+  }
 }
 
 .about__box {
@@ -93,6 +123,14 @@ export default {
   line-height: 1.75;
   text-align: left;
   background-color: $color-primary;
+  //
+  @include tablet {
+    font-size: 1.8rem;
+  }
+  //
+  @include widescreen {
+    font-size: 1.6rem;
+  }
   //
   p {
     //
@@ -108,6 +146,10 @@ export default {
   //
   dt {
     font-weight: bold;
+    //
+    @include tablet {
+      font-size: 1.2em;
+    }
   }
 
   //
@@ -115,6 +157,15 @@ export default {
     //
     + dt {
       margin-top: 1em;
+    }
+  }
+  //
+  a {
+    transition: all 0.2s $easeInOutSine;
+    //
+    &:hover {
+      color: $color-primary;
+      background-color: $color-black;
     }
   }
 }
