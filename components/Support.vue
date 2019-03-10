@@ -1,7 +1,7 @@
 <template>
   <div class="support">
     <h2 class="support__title">
-      supporters
+      supporters_
     </h2>
     <ul class="support__list">
       <li class="support__item">
@@ -182,11 +182,16 @@ export default {
   font-size: 9vw;
   font-weight: bold;
   text-transform: uppercase;
+  //
+  @include widescreen {
+    font-size: 4vw;
+  }
 }
 
 .support__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   //
   padding-top: $section-gutter-mobile;
   margin-bottom: -7.5vw;
@@ -196,24 +201,48 @@ export default {
   width: 50%;
   margin-bottom: $section-gutter-mobile;
   //
+  @include widescreen {
+    width: 20%;
+  }
+  //
   &:nth-of-type(1) {
     padding-right: 8vw;
     padding-left: 8vw;
+    //
+    @include widescreen {
+      padding-right: calc(8vw / 3);
+      padding-left: calc(8vw / 3);
+    }
   }
   //
   &:nth-of-type(2) {
     padding-right: 8vw;
     padding-left: 8vw;
+    //
+    @include widescreen {
+      padding-right: calc(8vw / 3);
+      padding-left: calc(8vw / 3);
+    }
   }
   //
   &:nth-of-type(3) {
     padding-right: 14vw;
     padding-left: 14vw;
+    //
+    @include widescreen {
+      padding-right: calc(14vw / 3);
+      padding-left: calc(14vw / 3);
+    }
   }
   //
   &:nth-of-type(4) {
     padding-right: 14vw;
     padding-left: 14vw;
+    //
+    @include widescreen {
+      padding-right: calc(14vw / 3);
+      padding-left: calc(14vw / 3);
+    }
   }
   //
   &:nth-of-type(5) {
@@ -221,6 +250,11 @@ export default {
     padding-left: 8vw;
     margin-right: auto;
     margin-left: auto;
+    //
+    @include widescreen {
+      padding-right: calc(8vw / 3);
+      padding-left: calc(8vw / 3);
+    }
   }
 }
 
