@@ -18,7 +18,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: '',
+        content: '2019年7月14日(日)に全50組の出演を予定している大阪・堀江 「お魚ロックフェスティバル」を開催します。soratobiwoが2019年から立ち上げた堀江を舞台にした5会場ライブサーキット！',
       },
     ],
     link: [

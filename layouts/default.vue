@@ -1,12 +1,25 @@
 <template>
-  <div class="wrapper">
+  <div>
+    <Loader />
     <Nuxt />
   </div>
 </template>
 
 <script>
+import Loader from '~/components/Loader'
+
+import { mapActions } from 'vuex'
+
 export default {
-  components: {},
+  components: { Loader },
+  mounted() {
+    this.$nextTick(() => {
+      this.setPageReady(true)
+    })
+  },
+  methods: {
+    ...mapActions(['setPageReady']),
+  },
 }
 </script>
 

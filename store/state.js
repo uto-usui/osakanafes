@@ -4,7 +4,9 @@ export default () => {
       name: '',
       description: '',
     },
-    domain: 'https://wired.j/wellbeing',
+    domain: '',
     menuOpen: false,
+    pageReady: false,
+    loader: true,
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="support">
     <h2 class="support__title">
-      supporters_
+      supporters
     </h2>
     <ul class="support__list">
       <li class="support__item">

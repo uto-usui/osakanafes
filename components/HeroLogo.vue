@@ -81,44 +81,4 @@ export default {
     margin-left: 25vw;
   }
 }
-
-svg {
-  //
-}
-
-.teri {
-  //
-}
-
-.a {
-  isolation: isolate;
-}
-
-.c {
-  fill: $color-primary-dark;
-}
-
-.d {
-  fill: $color-primary;
-  stroke: $color-black;
-  stroke-width: 14.72px;
-}
-
-.e {
-  fill: $color-primary-light;
-  stroke: $color-black;
-  stroke-width: 29.44px;
-}
-
-.g {
-  fill: none;
-  stroke: $color-primary-light;
-  stroke-width: 13.42px;
-}
-
-.h {
-  fill: none;
-  stroke: $color-primary-light;
-  stroke-linecap: round;
-}
 </style>

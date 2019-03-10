@@ -1,5 +1,5 @@
 <template>
-  <section class="wrapper">
+  <section v-if="!getLoader" class="wrapper">
     <Hero />
     <About />
     <Support />
@@ -8,10 +8,14 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 import Hero from '~/components/Hero'
 import About from '~/components/About'
 import Support from '~/components/Support'
-import FooterDefault from '~/pages/FooterDefault'
+import FooterDefault from '~/components/FooterDefault'
+
+import HeadMixin from '~/mixins/Head'
 
 export default {
   components: {
@@ -20,8 +24,9 @@ export default {
     About,
     Hero,
   },
+  mixins: [HeadMixin],
   computed: {
-    //
+    ...mapGetters(['getLoader']),
   },
 }
 </script>

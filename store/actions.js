@@ -18,4 +18,10 @@ export default {
   setMenuOpen({ commit }, value) {
     commit('menuOpen', value)
   },
+  setPageReady({ commit }, value) {
+    commit('pageReady', value)
+  },
+  setLoader({ commit }, value) {
+    commit('loader', value)
+  },
 }
