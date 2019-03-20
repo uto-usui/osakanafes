@@ -52,8 +52,8 @@
             <dd>¥3500 (1d別)</dd>
             <dt>TWITTER</dt>
             <dd>
-              <a href="https://twitter.com/osakana_fes" target="_blank">
-                @osakana_fes
+              <a href="https://twitter.com/osakanafes" target="_blank">
+                @osakanafes
               </a>
             </dd>
             <dt>CONTACT</dt>
