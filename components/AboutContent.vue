@@ -35,15 +35,15 @@
             <dd>2019.7.14 SUN</dd>
             <dt>TIME</dt>
             <dd>
-              リストバンド引換 11:00 <br>
+              リストバンド引換 11:00 <br />
               START 12:00
             </dd>
             <dt>PLACE</dt>
             <dd>
-              北堀江club vijon<br>
-              南堀江Knave<br>
-              hills パン工場<br>
-              SOCORE FACTORY<br>
+              北堀江club vijon<br />
+              南堀江Knave<br />
+              hills パン工場<br />
+              SOCORE FACTORY<br />
               covent garden
             </dd>
             <dt>ACT</dt>

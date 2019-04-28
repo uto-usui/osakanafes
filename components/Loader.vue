@@ -1,7 +1,12 @@
 <template>
-  <div :class="[{'is-hide': !getLoader}]" class="loader">
+  <div :class="[{ 'is-hide': !getLoader }]" class="loader">
     <div class="loader__inner">
-      <span v-for="(item, index) in text" ref="text" :key="`text${index}`" style="display: inline-block">
+      <span
+        v-for="(item, index) in text"
+        ref="text"
+        :key="`text${index}`"
+        style="display: inline-block"
+      >
         <span>{{ item }}</span>
       </span>
     </div>
