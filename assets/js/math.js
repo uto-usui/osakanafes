@@ -35,11 +35,11 @@ export function map(value, fromMin, fromMax, toMin, toMax) {
     value <= fromMin
       ? toMin
       : value >= fromMax
-        ? toMax
-        : (() => {
-            const ratio = (toMax - toMin) / (fromMax - fromMin)
-            return (value - fromMin) * ratio + toMin
-          })()
+      ? toMax
+      : (() => {
+          const ratio = (toMax - toMin) / (fromMax - fromMin)
+          return (value - fromMin) * ratio + toMin
+        })()
 
   return result
 }

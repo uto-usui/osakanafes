@@ -1,12 +1,14 @@
-const path = require('path')
-const StylelintPlugin = require('stylelint-webpack-plugin')
+import path from 'path'
+import StylelintPlugin from 'stylelint-webpack-plugin'
 
-module.exports = {
+import NuxtConfiguration from '@nuxt/config'
+
+const nuxtConfig: NuxtConfiguration = {
   mode: 'universal',
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'osakana fes - soratobiwo presents',
     htmlAttrs: {
@@ -33,18 +35,18 @@ module.exports = {
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [],
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [
     // '~plugins/vue-lazyload.client.js',
     // '~plugins/console.js',
@@ -52,8 +54,8 @@ module.exports = {
   ],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // '@nuxtjs/axios',
     '@nuxtjs/pwa',
@@ -85,36 +87,36 @@ module.exports = {
   },
 
   /*
-  ** Axios module configuration
-  */
+   ** Axios module configuration
+   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
-    splitChunks: {
-      layouts: true,
-    },
     /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
+     ** You can extend webpack config here
+     */
+    extend(config, { isClient }) {
       // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
+      if (isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         })
+        //
         config.plugins.push(
           new StylelintPlugin({
             files: ['**/*.vue'],
           }),
         )
+        //
+        config.devtool = '#source-map'
       }
       // import alias
       config.resolve.alias.Sass = path.resolve(__dirname, './assets/sass/')
@@ -127,3 +129,5 @@ module.exports = {
 
   generate: {},
 }
+
+module.exports = nuxtConfig
