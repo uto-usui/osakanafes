@@ -1,34 +1,30 @@
 <template>
-  <div class="about__inner">
-    <div class="about__section">
-      <h2 class="about__title">
-        OSAKANA FES … ?
-      </h2>
-      <div class="about__box">
-        <p>真夏の大阪・堀江の街に</p>
-        <p>
-          活きの良いお魚
-          <small>(バンド&SSW)</small>
-          集まりました！
-        </p>
-        <p>soratobiwoが2019年から立ち上げた</p>
-        <p>堀江を舞台にした5会場ライブサーキット！</p>
-        <p>
-          あなた好みのお魚
-          <small>(バンド&SSW)</small>
-          を探して
-        </p>
-        <p>
-          美味しく召し上がれ！
-          <small>(ライブ楽しんでね！)</small>
-        </p>
-      </div>
-    </div>
-    <div class="about__section">
-      <div class="about__section">
-        <h2 class="about__title">
-          DETAILS ///
-        </h2>
+  <div class="about">
+    <div class="about__inner">
+      <AboutSection>
+        <titleLevel1 text="OSAKANA FES … ?" />
+        <div class="about__box">
+          <p>真夏の大阪・堀江の街に</p>
+          <p>
+            活きの良いお魚
+            <small>(バンド&SSW)</small>
+            集まりました！
+          </p>
+          <p>soratobiwoが2019年から立ち上げた</p>
+          <p>堀江を舞台にした5会場ライブサーキット！</p>
+          <p>
+            あなた好みのお魚
+            <small>(バンド&SSW)</small>
+            を探して
+          </p>
+          <p>
+            美味しく召し上がれ！
+            <small>(ライブ楽しんでね！)</small>
+          </p>
+        </div>
+      </AboutSection>
+      <AboutSection>
+        <titleLevel1 text="DETAILS ///" />
         <div class="about__box">
           <dl>
             <dt>堀江 お魚ロックフェスティバル 2019</dt>
@@ -47,9 +43,22 @@
               covent garden
             </dd>
             <dt>ACT</dt>
-            <dd>全48組(予定)</dd>
+            <dd>
+              <span
+                v-for="(item, index) in bandJson"
+                :key="`band${index}`"
+                v-text="` ${item.name} / `"
+              ></span>
+            </dd>
             <dt>TICKET</dt>
-            <dd>¥3500 (1d別)</dd>
+            <dd>
+              ¥3500 (1d別) <br />
+              <a
+                href="https://eplus.jp/sf/detail/2896190001-P0030001"
+                target="_blank"
+                >e+イープラス</a
+              >
+            </dd>
             <dt>TWITTER</dt>
             <dd>
               <a href="https://twitter.com/osakanafes" target="_blank">
@@ -64,38 +73,42 @@
             </dd>
           </dl>
         </div>
-      </div>
+      </AboutSection>
     </div>
+    <LineUp :band-json="bandJson" />
   </div>
 </template>
-<script>
+
+<script lang="ts">
+import bandJson from '~/assets/json/band.json'
+import AboutSection from '~/components/AboutSection.vue'
+import LineUp from '~/components/LineUp.vue'
+import TitleLevel1 from '~/components/TitleLevel1.vue'
+//
 export default {
   name: 'AboutContent',
+  components: { TitleLevel1, LineUp, AboutSection },
+  data() {
+    return {
+      bandJson,
+    }
+  },
 }
 </script>
+
 <style lang="scss" scoped>
+.about {
+  background-color: $color-black;
+}
+
 .about__inner {
   padding-bottom: 7.5vw;
-  background-color: $color-black;
   //
   @include section-default;
   //
   @include widescreen {
     display: flex;
-  }
-}
-
-.about__section {
-  //
-  + .about__section {
-    margin-top: 7.5vw;
-    //
-
-    @include widescreen {
-      width: calc(50% - 7.5vw / 2);
-      margin-top: 0;
-      margin-left: 7.5vw;
-    }
+    justify-content: space-between;
   }
 }
 
@@ -161,6 +174,7 @@ export default {
   }
   //
   a {
+    border-bottom: 3px solid $color-black;
     transition: all 0.2s $easeInOutSine;
     //
     &:hover {
