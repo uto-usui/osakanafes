@@ -4,6 +4,7 @@ export default () => {
       name: '',
       description: '',
     },
+    pageData: {},
     domain: '',
     menuOpen: false,
     pageReady: false,

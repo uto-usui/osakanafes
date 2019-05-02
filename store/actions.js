@@ -7,6 +7,9 @@ export default {
       description: description ? description.content : '',
     })
   },
+  setPageData({ commit }, value) {
+    commit('pageData', value)
+  },
   toggleMenuOpen({ commit, state }) {
     let isOpen = state.menuOpen
     isOpen = !isOpen

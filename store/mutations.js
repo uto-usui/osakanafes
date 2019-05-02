@@ -2,6 +2,9 @@ export default {
   setMeta(state, data) {
     state.meta = data
   },
+  pageData(state, data) {
+    state.pageData = data
+  },
   menuOpen(state, data) {
     state.menuOpen = data
   },

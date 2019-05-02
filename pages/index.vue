@@ -1,7 +1,7 @@
 <template>
   <section v-if="!getLoader" class="wrapper">
     <Hero />
-    <About />
+    <About :get-page-width="getPageWidth" />
     <Support />
     <FooterDefault />
   </section>
@@ -26,7 +26,7 @@ export default {
   },
   mixins: [HeadMixin],
   computed: {
-    ...mapGetters(['getLoader']),
+    ...mapGetters(['getLoader', 'getPageWidth']),
   },
 }
 </script>

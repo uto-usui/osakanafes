@@ -1,7 +1,7 @@
 <template>
   <section class="about">
     <AboutWave />
-    <AboutContent />
+    <AboutContent :get-page-width="getPageWidth" />
   </section>
 </template>
 
@@ -12,6 +12,12 @@ import AboutContent from '~/components/AboutContent'
 export default {
   name: 'About',
   components: { AboutContent, AboutWave },
+  props: {
+    getPageWidth: {
+      type: Number,
+      default: 0,
+    },
+  },
   data() {
     return {
       detail: [],

@@ -75,7 +75,7 @@
         </div>
       </AboutSection>
     </div>
-    <LineUp :band-json="bandJson" />
+    <LineUp :get-page-width="getPageWidth" />
   </div>
 </template>
 
@@ -88,6 +88,12 @@ import TitleLevel1 from '~/components/TitleLevel1.vue'
 export default {
   name: 'AboutContent',
   components: { TitleLevel1, LineUp, AboutSection },
+  props: {
+    getPageWidth: {
+      type: Number,
+      default: 0,
+    },
+  },
   data() {
     return {
       bandJson,

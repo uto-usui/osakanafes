@@ -26,6 +26,9 @@ export default {
 
 .title2 {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30vw;
   height: 30vw;
   margin-right: auto;
@@ -42,14 +45,27 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(100vw * 18 / 375);
+  width: 15vw;
+  height: 15vw;
+  font-size: calc(100vw * 25 / 375);
   font-weight: bold;
-  color: $color-primary;
+  color: $color-black;
+  text-shadow: -1px -1px 0 $color-primary-light, 1px -1px 0 $color-primary-light,
+    -1px 1px 0 $color-primary-light, 1px 1px 0 $color-primary-light;
+  white-space: nowrap;
+  background-color: $color-primary-light;
+  border-radius: 50%;
   //
-  @include overlay;
+  // @include overlay;
   //
   @include desktop {
-    font-size: calc(100vw * 32 / 1024);
+    width: 10vw;
+    height: 10vw;
+    font-size: calc(100vw * 48 / 1024);
+  }
+  //
+  @include widescreen {
+    font-size: calc(100vw * 54 / 1200);
   }
 }
 
