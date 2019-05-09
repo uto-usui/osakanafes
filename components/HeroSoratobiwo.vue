@@ -89,7 +89,7 @@ export default {
       const targets = this.$el.querySelectorAll('.f')
       // const vueThis = this
 
-      targets.forEach(el => {
+      ;[...targets].forEach(el => {
         TweenMax.set(el, {
           opacity: 1,
           scale: 0,

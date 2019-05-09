@@ -286,7 +286,7 @@ export default {
       const targets = this.$el.querySelectorAll('.t')
       // const vueThis = this
 
-      targets.forEach(el => {
+      ;[...targets].forEach(el => {
         const len = el.getTotalLength()
 
         TweenMax.set(el, {

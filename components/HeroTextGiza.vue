@@ -41,7 +41,7 @@ export default {
       const targets = this.$el.querySelectorAll('.j')
       // const vueThis = this
 
-      targets.forEach(el => {
+      ;[...targets].forEach(el => {
         const len = el.getTotalLength()
 
         TweenMax.set(el, {
