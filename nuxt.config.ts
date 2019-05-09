@@ -32,6 +32,13 @@ const nuxtConfig: NuxtConfiguration = {
         href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700',
       },
     ],
+    script: [
+      {
+        src:
+          'https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver,es6,es7',
+        type: 'text/javascript',
+      },
+    ],
   },
 
   /*
