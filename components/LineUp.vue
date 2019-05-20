@@ -26,7 +26,7 @@ import TitleLevel1 from '~/components/TitleLevel1.vue'
 import TitleLevel2 from '~/components/TitleLevel2.vue'
 import LineUpItem from '~/components/LineUpItem.vue'
 
-const bandsCount = 3
+const bandsCount = 4
 const bandsList = []
 for (let i = 0; i < bandsCount; i++) {
   bandsList.push(bandJson.filter(band => band.vol === i + 1 + ''))

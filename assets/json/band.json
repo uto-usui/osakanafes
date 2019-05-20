@@ -250,5 +250,35 @@
     "img": "himitunomiyako",
     "site": "https://www.himitunomiyako.com/",
     "vol":  "3"
+  },
+  {
+    "name": "memento森",
+    "img": "memento",
+    "site": "http://iromotnemem.net/",
+    "vol":  "4"
+  },
+  {
+    "name": "SAPPY",
+    "img": "sappy",
+    "site": "https://www.sappy-official.com/",
+    "vol":  "4"
+  },
+  {
+    "name": "ソウルフード",
+    "img": "soulfood",
+    "site": "http://www.soulfood.biz/",
+    "vol":  "4"
+  },
+  {
+    "name": "RED EARTH",
+    "img": "redearth",
+    "site": "https://www3.hp-ez.com/hp/red-earth/page4",
+    "vol":  "4"
+  },
+  {
+    "name": "空中ループ",
+    "img": "kuuchuuloop",
+    "site": "http://www.kuuchuuloop.net/",
+    "vol":  "4"
   }
 ]

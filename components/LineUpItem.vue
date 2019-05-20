@@ -97,7 +97,7 @@ export default {
 }
 
 .lineup__img {
-  transition: transform 2s $easeFadeIn;
+  transition: transform 1.5s $easeFadeIn;
   transform: translateY(100%) scaleY(2);
   transform-origin: top center;
   //
@@ -109,9 +109,12 @@ export default {
 .lineup__inner {
   position: relative;
   display: block;
+  box-shadow: 0 0 0 rgba($color-primary, 1);
+  transition: all 0.2s $easeOutSine;
   //
   &:hover {
-    //
+    box-shadow: 10px 10px 0 rgba($color-primary, 1);
+    transform: translate3d(-10px, -10px, 0);
   }
 }
 
@@ -119,16 +122,20 @@ export default {
   background-color: $color-primary;
   mix-blend-mode: multiply;
   transition: transform 1s 0.2s $easeInOutExpo;
-  transform-origin: top center;
+  transform-origin: left center;
   //
   @include overlay;
   //
   .lineup__item.is-show & {
-    transform: scaleY(0);
+    transform: scaleX(0);
   }
 }
 
 .lineup__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $color-black;
   transition: transform 1s 0.2s $easeInOutExpo;
   transform: translateX(-100%);
   //
@@ -138,17 +145,19 @@ export default {
 }
 
 .lineup__name {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   font-size: calc(100vw * 12 / 375);
   font-weight: bold;
   color: $color-primary;
   text-align: left;
-  background-color: $color-black;
+  transition: transform 1.25s 0.5s $easePowerInOut;
+  transform: translateX(-100%);
   //
   @include desktop {
     font-size: calc(100vw * 18 / 1024);
+  }
+  //
+  .lineup__item.is-show & {
+    transform: translateX(0);
   }
 }
 </style>
