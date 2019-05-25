@@ -58,6 +58,10 @@ const nuxtConfig: NuxtConfiguration = {
     // '~plugins/vue-lazyload.client.js',
     // '~plugins/console.js',
     // '~plugins/scrollTo.js',
+    {
+      src: '~/plugins/exStore',
+      ssr: true,
+    },
   ],
 
   /*
