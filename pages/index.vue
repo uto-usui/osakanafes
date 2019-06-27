@@ -2,6 +2,7 @@
   <section v-if="!getLoader" class="wrapper">
     <Hero />
     <About :get-page-width="getPageWidth" />
+    <LineUp :get-page-width="getPageWidth" />
     <Support />
     <FooterDefault />
   </section>
@@ -14,6 +15,7 @@ import Hero from '~/components/Hero'
 import About from '~/components/About'
 import Support from '~/components/Support'
 import FooterDefault from '~/components/FooterDefault'
+import LineUp from '~/components/LineUp.vue'
 
 import HeadMixin from '~/mixins/Head'
 
@@ -23,6 +25,7 @@ export default {
     Support,
     About,
     Hero,
+    LineUp,
   },
   mixins: [HeadMixin],
   computed: {

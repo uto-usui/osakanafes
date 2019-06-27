@@ -75,19 +75,17 @@
         </div>
       </AboutSection>
     </div>
-    <LineUp :get-page-width="getPageWidth" />
   </div>
 </template>
 
 <script lang="ts">
 import bandJson from '~/assets/json/band.json'
 import AboutSection from '~/components/AboutSection.vue'
-import LineUp from '~/components/LineUp.vue'
 import TitleLevel1 from '~/components/TitleLevel1.vue'
 //
 export default {
   name: 'AboutContent',
-  components: { TitleLevel1, LineUp, AboutSection },
+  components: { TitleLevel1, AboutSection },
   props: {
     getPageWidth: {
       type: Number,
