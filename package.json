@@ -17,6 +17,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@bazzite/nuxt-optimized-images": "^0.2.1",
     "@nuxt/typescript": "^2.7.1",
     "@nuxtjs/axios": "^5.4.1",
     "@nuxtjs/google-gtag": "^1.0.4",

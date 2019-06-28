@@ -72,6 +72,7 @@ const nuxtConfig: NuxtConfiguration = {
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     '@nuxtjs/style-resources',
+    '@bazzite/nuxt-optimized-images',
     ['@nuxtjs/google-gtag', { id: 'UA-135906193-1' }],
   ],
 
@@ -97,11 +98,8 @@ const nuxtConfig: NuxtConfiguration = {
     ],
   },
 
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+  optimizedImages: {
+    optimizeImages: true,
   },
 
   /*
