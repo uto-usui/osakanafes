@@ -36,6 +36,8 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
+  position: relative;
+  z-index: 5;
   min-height: 100vh;
   overflow: hidden;
   background-color: $color-primary-light;

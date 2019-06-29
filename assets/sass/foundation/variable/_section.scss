@@ -17,7 +17,5 @@ $section-gutter-desktop: 7.5vw;
   @include desktop {
     padding-right: $section-gutter-desktop;
     padding-left: $section-gutter-desktop;
-    margin-right: auto;
-    margin-left: auto;
   }
 }

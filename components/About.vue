@@ -28,7 +28,8 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  //
+  width: 100%;
+  overflow: hidden;
 }
 
 .about__fes {

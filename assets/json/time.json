@@ -1,200 +1,215 @@
-{
-  "vijon": [
-    {
-      "time": "12:00",
-      "name": "いつまでもそのテンポで"
-    },
-    {
-      "time": "13:00",
-      "name": "Dr.FOOL"
-    },
-    {
-      "time": "14:00",
-      "name": "猫を堕ろす"
-    },
-    {
-      "time": "15:00",
-      "name": "百長"
-    },
-    {
-      "time": "16:00",
-      "name": "Nicetime Workerz"
-    },
-    {
-      "time": "17:00",
-      "name": "弱虫倶楽部"
-    },
-    {
-      "time": "18:00",
-      "name": "空中ループ"
-    },
-    {
-      "time": "19:00",
-      "name": "四丁目のアンナ"
-    },
-    {
-      "time": "20:00",
-      "name": "memento森"
-    },
-    {
-      "time": "21:00",
-      "name": "カトキット"
-    }
-  ],
-  "hills": [
-    {
-      "time": "12:10",
-      "name": "PURPLE HUMPTY"
-    },
-    {
-      "time": "13:10",
-      "name": "GENNARI"
-    },
-    {
-      "time": "14:10",
-      "name": "OKOJO"
-    },
-    {
-      "time": "15:10",
-      "name": "ステレオタイプ"
-    },
-    {
-      "time": "16:10",
-      "name": "スムージチークス"
-    },
-    {
-      "time": "17:10",
-      "name": "UNUBORE"
-    },
-    {
-      "time": "18:10",
-      "name": "komodo Inc."
-    },
-    {
-      "time": "19:10",
-      "name": "about a ROOM"
-    },
-    {
-      "time": "20:10",
-      "name": "EARNIE FROGs"
-    },
-    {
-      "time": "21:10",
-      "name": "ソウルフード"
-    }
-  ],
-  "socore": [
-    {
-      "time": "12:30",
-      "name": "Bacon"
-    },
-    {
-      "time": "13:30",
-      "name": "shule And christmas"
-    },
-    {
-      "time": "14:30",
-      "name": "ザ・シックスブリッツ"
-    },
-    {
-      "time": "15:30",
-      "name": "モケーレムベンベ"
-    },
-    {
-      "time": "16:30",
-      "name": "鈴木実貴子ズ"
-    },
-    {
-      "time": "17:30",
-      "name": "Andare"
-    },
-    {
-      "time": "18:30",
-      "name": "SAPPY"
-    },
-    {
-      "time": "19:30",
-      "name": "ワゴンズ"
-    },
-    {
-      "time": "20:30",
-      "name": "GOING UNDER GROUND"
-    },
-    {
-      "time": "21:30",
-      "name": "soratobiwo"
-    }
-  ],
-  "knave": [
-    {
-      "time": "12:20",
-      "name": "ヒミツノミヤコ"
-    },
-    {
-      "time": "13:20",
-      "name": "橙々"
-    },
-    {
-      "time": "14:20",
-      "name": "ULTRA CUB"
-    },
-    {
-      "time": "15:20",
-      "name": " YURERU PINK TOPAZ"
-    },
-    {
-      "time": "16:20",
-      "name": "林青空"
-    },
-    {
-      "time": "17:20",
-      "name": "PERO"
-    },
-    {
-      "time": "18:20",
-      "name": "ギャーギャーズ"
-    },
-    {
-      "time": "19:20",
-      "name": "スキッツォイドマン"
-    },
-    {
-      "time": "20:20",
-      "name": "イヌガヨ"
-    },
-    {
-      "time": "21:20",
-      "name": "RED EARTH"
-    }
-  ],
-  "covert": [
-    {
-      "time": "12:00",
-      "name": "浅野毅"
-    },
-    {
-      "time": "12:50",
-      "name": "アマイ ワナ"
-    },
-    {
-      "time": "13:40",
-      "name": "ナツコポラリス"
-    },
-    {
-      "time": "14:30",
-      "name": "airlie"
-    },
-    {
-      "time": "15:20",
-      "name": "nishikeke"
-    },
-    {
-      "time": "16:10",
-      "name": "ふるかわののこ"
-    },
-    {
-      "time": "17:00",
-      "name": "わたなべよしくに"
-    }
-  ]
-}
+[
+  {
+    "place": "vijon",
+    "band": [
+      {
+        "time": "12:00",
+        "name": "いつまでもそのテンポで"
+      },
+      {
+        "time": "13:00",
+        "name": "Dr.FOOL"
+      },
+      {
+        "time": "14:00",
+        "name": "猫を堕ろす"
+      },
+      {
+        "time": "15:00",
+        "name": "百長"
+      },
+      {
+        "time": "16:00",
+        "name": "Nicetime Workerz"
+      },
+      {
+        "time": "17:00",
+        "name": "弱虫倶楽部"
+      },
+      {
+        "time": "18:00",
+        "name": "空中ループ"
+      },
+      {
+        "time": "19:00",
+        "name": "四丁目のアンナ"
+      },
+      {
+        "time": "20:00",
+        "name": "memento森"
+      },
+      {
+        "time": "21:00",
+        "name": "カトキット"
+      }
+    ]
+  },
+  {
+    "place": "hills",
+    "band": [
+      {
+        "time": "12:10",
+        "name": "PURPLE HUMPTY"
+      },
+      {
+        "time": "13:10",
+        "name": "GENNARI"
+      },
+      {
+        "time": "14:10",
+        "name": "OKOJO"
+      },
+      {
+        "time": "15:10",
+        "name": "ステレオタイプ"
+      },
+      {
+        "time": "16:10",
+        "name": "スムージチークス"
+      },
+      {
+        "time": "17:10",
+        "name": "UNUBORE"
+      },
+      {
+        "time": "18:10",
+        "name": "komodo Inc."
+      },
+      {
+        "time": "19:10",
+        "name": "about a ROOM"
+      },
+      {
+        "time": "20:10",
+        "name": "EARNIE FROGs"
+      },
+      {
+        "time": "21:10",
+        "name": "ソウルフード"
+      }
+    ]
+  },
+  {
+    "place": "socore",
+    "band": [
+      {
+        "time": "12:30",
+        "name": "Bacon"
+      },
+      {
+        "time": "13:30",
+        "name": "shule And christmas"
+      },
+      {
+        "time": "14:30",
+        "name": "ザ・シックスブリッツ"
+      },
+      {
+        "time": "15:30",
+        "name": "モケーレムベンベ"
+      },
+      {
+        "time": "16:30",
+        "name": "鈴木実貴子ズ"
+      },
+      {
+        "time": "17:30",
+        "name": "Andare"
+      },
+      {
+        "time": "18:30",
+        "name": "SAPPY"
+      },
+      {
+        "time": "19:30",
+        "name": "ワゴンズ"
+      },
+      {
+        "time": "20:30",
+        "name": "GOING UNDER GROUND"
+      },
+      {
+        "time": "21:30",
+        "name": "soratobiwo"
+      }
+    ]
+  },
+  {
+    "place": "knave",
+    "band": [
+      {
+        "time": "12:20",
+        "name": "ヒミツノミヤコ"
+      },
+      {
+        "time": "13:20",
+        "name": "橙々"
+      },
+      {
+        "time": "14:20",
+        "name": "ULTRA CUB"
+      },
+      {
+        "time": "15:20",
+        "name": " YURERU PINK TOPAZ"
+      },
+      {
+        "time": "16:20",
+        "name": "林青空"
+      },
+      {
+        "time": "17:20",
+        "name": "PERO"
+      },
+      {
+        "time": "18:20",
+        "name": "ギャーギャーズ"
+      },
+      {
+        "time": "19:20",
+        "name": "スキッツォイドマン"
+      },
+      {
+        "time": "20:20",
+        "name": "イヌガヨ"
+      },
+      {
+        "time": "21:20",
+        "name": "RED EARTH"
+      }
+    ]
+  },
+  {
+    "place": "covent",
+    "band": [
+      {
+        "time": "12:00",
+        "name": "浅野毅"
+      },
+      {
+        "time": "12:50",
+        "name": "アマイ ワナ"
+      },
+      {
+        "time": "13:40",
+        "name": "ナツコポラリス"
+      },
+      {
+        "time": "14:30",
+        "name": "airlie"
+      },
+      {
+        "time": "15:20",
+        "name": "nishikeke"
+      },
+      {
+        "time": "16:10",
+        "name": "ふるかわののこ"
+      },
+      {
+        "time": "17:00",
+        "name": "わたなべよしくに"
+      }
+    ]
+  }
+]

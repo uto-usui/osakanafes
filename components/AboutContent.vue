@@ -1,5 +1,6 @@
 <template>
-  <div class="about">
+  <div class="about-content">
+    <TimeLine />
     <div class="about__inner">
       <AboutSection>
         <titleLevel1 text="OSAKANA FES … ?" />
@@ -82,10 +83,11 @@
 import bandJson from '~/assets/json/band.json'
 import AboutSection from '~/components/AboutSection.vue'
 import TitleLevel1 from '~/components/TitleLevel1.vue'
+import TimeLine from '~/components/TimeLine.vue'
 //
 export default {
   name: 'AboutContent',
-  components: { TitleLevel1, AboutSection },
+  components: { TimeLine, TitleLevel1, AboutSection },
   props: {
     getPageWidth: {
       type: Number,
@@ -101,11 +103,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.about {
+.about-content {
   background-color: $color-black;
 }
 
 .about__inner {
+  padding-top: 7.5vw;
   padding-bottom: 7.5vw;
   //
   @include section-default;
