@@ -503,6 +503,10 @@ $color-covent: #52b05f;
           @include desktop {
             top: calc((80px * 20 / 30 + 2px) * -1);
           }
+          //
+          @include fullhd {
+            top: calc((100px * 20 / 30 + 2px) * -1);
+          }
         }
       }
       //
@@ -513,6 +517,11 @@ $color-covent: #52b05f;
           //
           @include desktop {
             top: calc((80px * 20 / 30 / 2 + 2px) * -1);
+          }
+          //
+          //
+          @include fullhd {
+            top: calc((100px * 20 / 30 / 2 + 2px) * -1);
           }
         }
       }
