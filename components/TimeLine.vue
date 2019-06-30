@@ -479,6 +479,60 @@ $color-covent: #52b05f;
         }
       }
     }
+    //
+    &--covent {
+      margin-top: calc(70px / 3 * 2);
+      //
+      @include desktop {
+        margin-top: calc(80px / 3 * 2);
+      }
+      //
+      @include fullhd {
+        margin-top: calc(100px / 3 * 2);
+      }
+      //
+      &::after {
+        display: none;
+      }
+      //
+      &:nth-of-type(5) {
+        &::after {
+          top: calc((70px * 20 / 30 + 2px) * -1);
+          display: block;
+          //
+          @include desktop {
+            top: calc((80px * 20 / 30 + 2px) * -1);
+          }
+        }
+      }
+      //
+      &:nth-of-type(6) {
+        &::after {
+          top: calc((70px * 20 / 30 / 2 + 2px) * -1);
+          display: block;
+          //
+          @include desktop {
+            top: calc((80px * 20 / 30 / 2 + 2px) * -1);
+          }
+        }
+      }
+      //
+      &:nth-of-type(7) {
+        //
+        &::after {
+          // top: calc((70px * 20 / 30 + 2px) * -1);
+          display: block;
+          //
+          @include desktop {
+            // top: calc((80px * 20 / 30 + 2px) * -1);
+          }
+          //
+          @include fullhd {
+            // top: calc((100px * 20 / 30 + 2px) * -1);
+          }
+        }
+      }
+    }
   }
 }
 
