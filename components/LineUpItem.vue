@@ -81,8 +81,9 @@ export default {
   width: 50%;
   //
   @include desktop {
-    width: calc(100% / 3 - (7.5vw / 3 * 2 / 3));
-    margin-bottom: calc(7.5vw / 3);
+    // width: calc(100% / 3 - (7.5vw / 3 * 2 / 3));
+    width: calc(100% / 3);
+    // margin-bottom: calc(7.5vw / 3);
     //
     .lineup__list.lineup__list--1 & {
       width: calc(100% / 2 - (7.5vw / 3 / 2));
