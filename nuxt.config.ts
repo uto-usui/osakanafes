@@ -79,7 +79,7 @@ const nuxtConfig: NuxtConfiguration = {
   /**
    * page transition
    */
-  transition: {
+  pageTransition: {
     css: false,
     enter(el, done) {
       done()
