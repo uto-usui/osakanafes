@@ -53,30 +53,18 @@ export default {
         },
       })
 
-      tl.staggerFromTo(
+      tl.staggerTo(
         this.$refs.text,
-        2,
+        0.75,
         {
-          rotationY: -360,
-        },
-        {
-          rotationY: 0,
-        },
-        0.1,
-      )
-        .staggerTo(
-          this.$refs.text,
-          1,
-          {
-            y: '-55vh',
-            ease: Expo.easeInOut,
-          },
-          0.02,
-        )
-        .to(this.$refs.bg, 0.75, {
-          scaleY: 0,
+          y: '-55vh',
           ease: Expo.easeInOut,
-        })
+        },
+        0.02,
+      ).to(this.$refs.bg, 0.55, {
+        scaleY: 0,
+        ease: Expo.easeInOut,
+      })
     },
   },
 }
