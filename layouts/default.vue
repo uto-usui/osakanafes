@@ -1,19 +1,21 @@
 <template>
   <div>
     <Loader />
+    <Hash />
     <Nuxt />
   </div>
 </template>
 
 <script>
 import Loader from '~/components/Loader'
+import Hash from '~/components/Hash'
 
 import { mapActions } from 'vuex'
 
 import data from '~/assets/js/data'
 
 export default {
-  components: { Loader },
+  components: { Loader, Hash },
   mounted() {
     this.$nextTick(() => {
       data.init()

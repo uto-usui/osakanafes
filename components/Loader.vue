@@ -48,6 +48,7 @@ export default {
       // )
 
       const tl = new TimelineMax({
+        delay: 0.5,
         onComplete: () => {
           this.setLoader(false)
         },
@@ -61,7 +62,7 @@ export default {
           ease: Expo.easeInOut,
         },
         0.02,
-      ).to(this.$refs.bg, 0.55, {
+      ).to(this.$refs.bg, 0.75, {
         scaleY: 0,
         ease: Expo.easeInOut,
       })
