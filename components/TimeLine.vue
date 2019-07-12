@@ -46,6 +46,12 @@
           </ul>
         </div>
       </div>
+
+      <div class="tl__button-wrap">
+        <a class="tl__button" href="/time.pdf" target="_blank">
+          Time table PDF DOWNLOAD
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -589,6 +595,30 @@ $color-covent: #52b05f;
   }
   //
   @include fullhd {
+    font-size: 2rem;
+  }
+}
+
+.tl__button-wrap {
+  padding-right: $section-gutter-mobile;
+  padding-left: $section-gutter-mobile;
+  margin-top: $section-gutter-mobile;
+}
+
+.tl__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  color: $color-black;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: $color-primary;
+  //
+  @include desktop {
+    height: 75px;
     font-size: 2rem;
   }
 }
